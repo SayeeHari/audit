@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-4">
+    <div class="container">
+      <div class="col-md-6 mx-auto card p-4">
+        <h3>Login</h3>
+        <form method="POST">
+          <div class="mb-3">
+            <label>Email</label
+            ><input class="form-control" name="email" type="email" required />
+          </div>
+          <div class="mb-3">
+            <label>Password</label
+            ><input
+              class="form-control"
+              name="password"
+              type="password"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label>Role</label>
+            <select name="role" class="form-select">
+              <option value="auditee">Auditee</option>
+              <option value="auditor">Auditor</option>
+              <option value="tester">Tester</option>
+            </select>
+          </div>
+          <button class="btn btn-primary">Login</button>
+        </form>
+        <hr />
+      </div>
+    </div>
+  </body>
+</html>

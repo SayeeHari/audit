@@ -1,0 +1,45 @@
+{% extends "index.html" %} {% block content %}
+<div class="container">
+  <div class="card mt-4 p-4">
+    <h3>Register (Auditee)</h3>
+    <form method="POST">
+      <!-- fields -->
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label>Name</label><input name="name" class="form-control" required />
+        </div>
+        <div class="col-md-6 mb-3">
+          <label>Organization</label
+          ><input name="org_name" class="form-control" required />
+        </div>
+      </div>
+      <div class="mb-3">
+        <label>Audit Date</label
+        ><input type="date" name="audit_date" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label>Mobile</label><input name="mobile" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label>Email</label
+        ><input type="email" name="email" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label>Password</label
+        ><input type="password" name="password" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label>Organization Type</label>
+        <select name="org_type" class="form-select">
+          <option>Startup</option>
+          <option>SME</option>
+          <option>Enterprise</option>
+          <option>Government</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <button class="btn btn-success">Register</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
